@@ -1,6 +1,6 @@
 plugins {
     id 'java-library'
-    id 'maven-publish'
+    id 'com.vanniktech.maven.publish' version '0.37.0'
 }
 
 group = 'io.github.devinjae'
@@ -14,8 +14,6 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
     }
-    withSourcesJar()
-    withJavadocJar()
 }
 
 dependencies {
@@ -36,4 +34,35 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+mavenPublishing {
+    publishToMavenCentral()
+    signAllPublications()
+
+    pom {
+        name = 'OHH Model'
+        description = 'Java models for the Open Hand History specification'
+        url = 'https://github.com/devinjae/ohh-model'
+
+        licenses {
+            license {
+                name = 'MIT License'
+                url = 'https://opensource.org/licenses/MIT'
+            }
+        }
+
+        developers {
+            developer {
+                id = 'devinjae'
+                name = 'Daniel(In-Jae) Jung'
+            }
+        }
+
+        scm {
+            url = 'https://github.com/devinjae/ohh-model'
+            connection = 'scm:git:https://github.com/devinjae/ohh-model.git'
+            developerConnection = 'scm:git:ssh://git@github.com/devinjae/ohh-model.git'
+        }
+    }
 }
