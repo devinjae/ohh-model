@@ -1,0 +1,175 @@
+{
+  "ohh": {
+    "spec_version": "1.2.2",
+    "internal_version": "1.2.2",
+    "network_name": "PokerStars",
+    "site_name": "PokerStars",
+    "game_type": "Holdem",
+    "start_date_utc": "2019-03-28T08:16:05",
+    "table_size": 3,
+    "table_name": "2572001822 1",
+    "game_number": "198636399064",
+    "currency": "",
+    "ante_amount": 0.00,
+    "small_blind_amount": 10.00,
+    "big_blind_amount": 20.00,
+    "bet_limit": {
+      "bet_cap": 0.00,
+      "bet_type": "NL"
+    },
+    "tournament_info": {
+      "name": "",
+      "start_date_utc": "2019-03-28T08:16:05",
+      "type": "STT",
+      "buyin_amount": 0.23,
+      "currency": "USD",
+      "fee_amount": 0.02,
+      "bounty_fee_amount": 0.00,
+      "tournament_number": "2572001822",
+      "flags": "",
+      "initial_stack": 1500,
+      "speed": {
+        "type": "Normal",
+        "round_time": 10
+      }
+    },
+    "tournament_bounties": [
+    ],
+    "tournament_rebuys": [
+    ],
+    "hero_player_id": 0,
+    "dealer_seat": 2,
+    "players": [
+      {
+        "name": "Hero",
+        "id": 0,
+        "player_bounty": 0,
+        "starting_stack": 500.00,
+        "seat": 1
+      },
+      {
+        "name": "Player2",
+        "id": 1,
+        "player_bounty": 0,
+        "starting_stack": 490.00,
+        "seat": 2
+      },
+      {
+        "name": "Player3",
+        "id": 2,
+        "player_bounty": 0,
+        "starting_stack": 510.00,
+        "seat": 3
+      }
+    ],
+    "rounds": [
+      {
+        "id": 0,
+        "cards": "",
+        "street": "Preflop",
+        "actions": [
+          {
+            "action_number": 1,
+            "player_id": 2,
+            "action": "Post SB",
+            "amount": 10.00,
+            "is_allin": false
+          },
+          {
+            "action_number": 2,
+            "player_id": 0,
+            "action": "Post BB",
+            "amount": 20.00,
+            "is_allin": false
+          },
+          {
+            "action_number": 3,
+            "player_id": 0,
+            "cards": [
+              "4d",
+              "9h"
+            ],
+            "action": "Dealt Cards",
+            "amount": 0.00,
+            "is_allin": false
+          },
+          {
+            "action_number": 4,
+            "player_id": 1,
+            "action": "Fold",
+            "amount": 0.00,
+            "is_allin": false
+          },
+          {
+            "action_number": 5,
+            "player_id": 2,
+            "action": "Call",
+            "amount": 10.00,
+            "is_allin": false
+          },
+          {
+            "action_number": 6,
+            "player_id": 0,
+            "action": "Check",
+            "amount": 0.00,
+            "is_allin": false
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "cards": [
+          "2s",
+          "Ac",
+          "Js"
+        ],
+        "street": "Flop",
+        "actions": [
+          {
+            "action_number": 1,
+            "player_id": 2,
+            "action": "Bet",
+            "amount": 40.00,
+            "is_allin": false
+          },
+          {
+            "action_number": 2,
+            "player_id": 0,
+            "action": "Fold",
+            "amount": 0.00,
+            "is_allin": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "street": "Showdown",
+        "actions": [
+          {
+            "action_number": 1,
+            "player_id": 2,
+            "action": "Mucks Cards",
+            "amount": 0.00,
+            "is_allin": false
+          }
+        ]
+      }
+    ],
+    "pots": [
+      {
+        "rake": 0.00,
+        "number": 0,
+        "player_wins": [
+          {
+            "player_id": 2,
+            "win_amount": 40.00,
+            "contributed_rake": 0.00
+          }
+        ],
+        "amount": 40.00
+      }
+    ]
+  }
+}
+
+

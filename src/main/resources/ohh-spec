@@ -1,0 +1,44 @@
+{"ohh":
+  {
+    "spec_version": version_string,
+    "site_name": string,
+    "network_name": string,
+    "internal_version": version_string,
+    "tournament": boolean
+    "tournament_info": <tournament_info_obj>,
+    "game_number": string,
+    "start_date_utc": string,
+    "table_name": string,
+    "table_handle": string,
+    "table_skin": string,
+    "game_type": string,
+    "bet_limit": <bet_limit_obj>,
+    "table_size": integer,
+    "currency": string,
+    "dealer_seat": integer,
+    "small_blind_amount": decimal,
+    "big_blind_amount": decimal,
+    "ante_amount": decimal,
+    "hero_player_id": integer,
+    "flags": [
+      string,
+      string
+    ],
+    "players": [
+      <player_obj>,
+      <player_obj>
+    ],
+    "rounds": [
+      <round_obj>,
+      <round_obj>
+    ],
+    "pots": [
+      <pot_obj>,
+      <pot_obj>
+    ],
+    "tournament_bounties": [
+      <tournament_bounty_obj>,
+      <tournament_bounty_obj>
+    ]
+  }
+}
