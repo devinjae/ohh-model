@@ -2,9 +2,7 @@ package io.github.devinjae.ohh.model.enums;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
-import lombok.Getter;
 
-@Getter(onMethod_ = @JsonValue)
 public enum StreetType {
     PREFLOP("Preflop"),
     FLOP("Flop"),
@@ -18,6 +16,10 @@ public enum StreetType {
         this.value = value;
     }
 
+    @JsonValue
+    public String getValue() {
+        return value;
+    }
 
     @JsonCreator
     public static StreetType fromValue(String value) {

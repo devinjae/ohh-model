@@ -2,9 +2,7 @@ package io.github.devinjae.ohh.model.enums;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
-import lombok.Getter;
 
-@Getter(onMethod_ = @JsonValue)
 public enum HandFlag {
     RUN_IT_TWICE("Run_It_Twice"),
     ANONYMOUS("Anonymous"),
@@ -19,6 +17,10 @@ public enum HandFlag {
         this.value = value;
     }
 
+    @JsonValue
+    public String getValue() {
+        return value;
+    }
 
     @JsonCreator
     public static HandFlag fromValue(String value) {
