@@ -15,7 +15,7 @@ Provides type-safe Java models with JSON serialization and deserialization using
 
 ```groovy
 dependencies {
-    implementation 'io.github.devinjae:ohh-model:0.1.0'
+    implementation 'io.github.devinjae:ohh-model:0.1.1'
 }
 ```
 
